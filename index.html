@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+  </head>
+
+  <body>
+    <form novalidate target="_blank">
+      <div>
+        <label>username</label>
+        <input
+          type="text"
+          required
+          placeholder="Enter username"
+          name="username"
+          value="3bood"
+          readonly
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email address </label>
+        <input
+          type="email"
+          required
+          placeholder="Enter a valid Email"
+          value="3bood@email"
+          name="email"
+          disabled
+        />
+      </div>
+      <br />
+      <div>
+        <label>password</label>
+        <input
+          type="password"
+          placeholder="Enter a Complex password"
+          name="password"
+          minlength="8"
+          maxlength="16"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Subject</label>
+        <input
+          type="text"
+          placeholder="Enter Subject"
+          name="subject"
+          autofocus
+        />
+      </div>
+      <div>
+        <input type="hidden" value="1" />
+      </div>
+      <br />
+      <div>
+        <label>Color</label>
+        <input type="color" />
+      </div>
+      <br />
+      <div>
+        <label>Range</label>
+        <input type="range" step="20" min="0" max="100" />
+      </div>
+      <br />
+      <div>
+        <label>number</label>
+        <input type="number" value="number" min="0" max="100" />
+      </div>
+      <br />
+      <div>
+        <input id="win" type="radio" name="os" value="Windows" checked />
+        <label for="win">Windows</label>
+      </div>
+      <div>
+        <input id="lin" type="radio" name="os" value="Linux" />
+        <label for="lin">Linux</label>
+      </div>
+      <div>
+        <input id="mac" type="radio" name="os" value="Mac" />
+        <label for="mac">Mac </label>
+      </div>
+      <br />
+      <hr />
+      <div>
+        <input id="win1" type="checkbox" name="os" value="Windows" checked />
+        <label for="win1">Windows</label>
+      </div>
+      <div>
+        <input id="lin1" type="checkbox" name="os" value="Linux" />
+        <label for="lin1">Linux</label>
+      </div>
+      <div>
+        <input id="mac1" type="checkbox" name="os" value="Mac" />
+        <label for="mac1">Mac </label>
+      </div>
+      <br />
+      <label for="book">Chose a book</label>
+      <select name="book" id="book" multiple>
+        <optgroup label="Groub 1">
+          <option value="1" selected>Book1</option>
+          <option value="2">Book2</option>
+          <option value="3">Book3</option>
+        </optgroup>
+
+        <optgroup label="Groub 2">
+          <option value="4">Book4</option>
+          <option value="5">Book5</option>
+          <option value="6">Book6</option>
+        </optgroup>
+
+        <optgroup label="Groub 3">
+          <option value="7">Book7</option>
+          <option value="8">Book8</option>
+          <option value="9">Book9</option>
+        </optgroup>
+      </select>
+      <br />
+      <textarea name="text" placeholder="text" cols="30" rows="10"></textarea>
+      <br />
+      <input type="file" />
+      <input type="search" />
+      <input type="url" />
+      <input type="date" />
+      <input type="month" />
+      <input type="time" />
+      <br />
+      <input list="Programming" name="langs" />
+      <datalist id="Programming">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="Java Script"></option>
+        <option value="Python"></option>
+      </datalist>
+      <br />
+      <div>
+        <input type="reset" />
+        <br />
+        <input type="submit" value="save" />
+      </div>
+    </form>
+  </body>
+</html>
